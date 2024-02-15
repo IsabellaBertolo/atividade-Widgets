@@ -1,18 +1,20 @@
 import React from 'react';
 import { View } from 'react-native';
+
 import SimpleWidget from './SimpleWidget';
-import Header from '../header';
-import Body from './body';
-import Footer from './footer';
+import Meio from './Meio';
+import Folder from './Folder';
 
-const App = () => {
-  return (
-    <View>
-      <Header />
-      <Body />
-      <Footer />
-    </View>
-  );
-};
-
+function App() {
+    return (
+        <View style={{ flex: 1 }}>
+            <SimpleWidget />
+            <Meio>
+            </Meio>
+            <Folder >
+            </Folder>
+            
+        </View>
+    );
+}
 export default App;
